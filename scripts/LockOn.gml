@@ -6,10 +6,10 @@ var MaxTargets = argument2;
 
 //#####################################################################################################################################
 
-if (gamepad_button_check(Player, gp_shoulderl)){
+if (gamepad_button_check_pressed(Player, gp_shoulderl)){
   i--;
 }
-if (gamepad_button_check(Player, gp_shoulderr)){
+if (gamepad_button_check_pressed(Player, gp_shoulderr)){
    i++;
 }
 while (i >= MaxTargets){
