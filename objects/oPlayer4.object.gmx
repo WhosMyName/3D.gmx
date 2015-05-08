@@ -30,24 +30,29 @@ ClassSelected = 0;
 if (not Player4Pick == 0){
     if (Player4Pick == 1){
        ClassSelected = instance_create(x, y, oClass1);
+       ClassSelected.Owner = self.id;
     }
     if (Player4Pick == 2){
        ClassSelected = instance_create(x, y, oClass1);
+       ClassSelected.Owner = self.id;
     }
     if (Player4Pick == 3){
        ClassSelected = instance_create(x, y, oClass1);
+       ClassSelected.Owner = self.id;
     }
     if (Player4Pick == 4){
        ClassSelected = instance_create(x, y, oClass1);
+       ClassSelected.Owner = self.id;
     }
 }
 PlayerNum = 3;
 
 
-if(room == 1){
-instance_create(x, y, oSelectClass)
-}
 
+if(room == 1){
+SelectClass = instance_create(x, y, oSelectClass);
+SelectClass.Owner = self.id;
+}
 </string>
           </argument>
         </arguments>

@@ -18,7 +18,7 @@ i = i - MaxTargets;
 while (i < 0){
 i = i + MaxTargets;
 }
-TargetCross.x = Target[i].x;
-TargetCross.y = Target[i].y;
+x = Owner.Target[i].x;
+y = Owner.Target[i].y;
 
 return i;
