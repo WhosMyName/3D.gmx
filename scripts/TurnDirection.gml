@@ -1,7 +1,17 @@
-    var Player = argument0;
-    
-    key_left = (gamepad_axis_value(Player, gp_axisrh) < -0.5);
-    key_right = (gamepad_axis_value(Player, gp_axisrh) > 0.5);
-    key_up = (gamepad_axis_value(Player, gp_axisrv) > 0.5);
-    key_down = (gamepad_axis_value(Player, gp_axisrv) < -0.5);
-    
+var Player = argument0;
+var Angle = noone;
+
+var horizontalpoint = gamepad_axis_value(Player, gp_axisrh);
+var verticalpoint = gamepad_axis_value(Player, gp_axisrv);
+if ((horizontalpoint != 0) or (verticalpoint != 0)){
+    var pointdirection = point_direction(0, 0, horizontalpoint, verticalpoint);
+    var diffference = angle_difference(pointdirection, Angle);
+    if (Angle == noone){
+    var Angle = median(-180, diffference, 180);
+    }
+    else{
+    var Angle = Angle + median(-180, diffference, 180);
+    }
+}
+return Angle;
+//https://www.yoyogames.com/tech_blog/89

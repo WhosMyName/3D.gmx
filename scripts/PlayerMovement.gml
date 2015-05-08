@@ -31,10 +31,10 @@ y = y + vsp;
 
 /*Controller*/
 //if (oGame.Controller = 1){
-    key_left = -(gamepad_axis_value(Player, gp_axislh) < -0.5);
-    key_right = gamepad_axis_value(Player, gp_axislh) > 0.5;
-    key_up = (gamepad_axis_value(Player, gp_axislv) > 0.5);
-    key_down = -(gamepad_axis_value(Player, gp_axislv) < -0.5);
+    key_left = -(gamepad_axis_value(Player, gp_axislh) < -0.25);
+    key_right = gamepad_axis_value(Player, gp_axislh) > 0.25;
+    key_up = (gamepad_axis_value(Player, gp_axislv) > 0.25);
+    key_down = -(gamepad_axis_value(Player, gp_axislv) < -0.25);
      
     
     move = key_left + key_right;
