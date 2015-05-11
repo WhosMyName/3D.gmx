@@ -38,12 +38,14 @@
     <script>scripts\Life.gml</script>
     <script>scripts\LockOn.gml</script>
     <script>scripts\ArrayIDList.gml</script>
+    <script>scripts\ClassSelect.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\oGlobalVars</object>
     <object>objects\oScreenSplitting</object>
     <object>objects\oGame</object>
     <object>objects\oSelectClass</object>
+    <object>objects\oClasses</object>
     <object>objects\oClass1</object>
     <objects name="gGround">
       <object>objects\oWallParent</object>
@@ -58,7 +60,6 @@
     <object>objects\oFlameShield</object>
     <object>objects\oEnemy1</object>
     <object>objects\oTarget</object>
-    <object>objects\oClasses</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

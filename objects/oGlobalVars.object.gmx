@@ -78,7 +78,7 @@ globalvar Sec1;
 Sec1 = 1 * room_speed;
 
 globalvar MaxPlayer;
-MaxPlayer = 0;
+MaxPlayer = 1;
 
 /*-------Not So Global Vars----------*/
 

@@ -53,6 +53,7 @@
   <instances>
     <instance objName="oGame" x="448" y="192" name="inst_54340421" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oScreenSplitting" x="160" y="224" name="inst_5088A3EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oPlayer1" x="128" y="96" name="inst_EC8D7CD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

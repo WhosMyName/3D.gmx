@@ -26,33 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>view_object[1] = self.id;
-ClassSelected = 0;
-if (not Player2Pick == 0){
-    if (Player2Pick == 1){
-       ClassSelected = instance_create(x, y, oClass1);
-       ClassSelected.Owner = self.id;
-    }
-    if (Player2Pick == 2){
-       ClassSelected = instance_create(x, y, oClass1);
-       ClassSelected.Owner = self.id;
-    }
-    if (Player2Pick == 3){
-       ClassSelected = instance_create(x, y, oClass1);
-       ClassSelected.Owner = self.id;
-    }
-    if (Player2Pick == 4){
-       ClassSelected = instance_create(x, y, oClass1);
-       ClassSelected.Owner = self.id;
-    }
-}
 PlayerNum = 1;
 
+ClassSelected = 0;
 
-
-if(room == 1){
-SelectClass = instance_create(x, y, oSelectClass);
-SelectClass.Owner = self.id;
-}
+ClassSelect();
 </string>
           </argument>
         </arguments>
