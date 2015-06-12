@@ -51,7 +51,8 @@ Shielding = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = Owner.x;
+            <string>if (instance_exists(Owner) == true){
+x = Owner.x;
 y = Owner.y - 16;
 
 if (Owner.FlameShield == 0){
@@ -62,6 +63,10 @@ instance_destroy()
 if (Owner.FlameShield == 1){
 image_alpha = 1;
 Shielding = 1;
+}
+}
+else {
+instance_destroy();
 }
 </string>
           </argument>

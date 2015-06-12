@@ -90,7 +90,7 @@ instance_destroy();
 FlameShieldExist = 0;
 }
 /*Creatin' One TargetCross*/
-if (gamepad_button_check_pressed(Owner.PlayerNum, gp_face3) and TargetCrossCreated == 0 /*and Release == 0*/){
+if (gamepad_button_check_pressed(Owner.PlayerNum, gp_face3) and TargetCrossCreated == 0){
     TargetCross = instance_create(x, y, oTarget);
     TargetCross.Owner = self.id;
     TargetCrossCreated = 1;
@@ -107,22 +107,35 @@ if (gamepad_button_check_released(Owner.PlayerNum, gp_face3) and Release == 1){
 if(gamepad_button_check(Owner.PlayerNum, gp_face4)){
 //Dash
 }
-;
 
-
-ShootCounter = ShootCounter + 1;
-if (ShootCounter == BPS and gamepad_button_check(Owner.PlayerNum, gp_shoulderr)){
-     Bullet = instance_create(x,y,oBullet);
-     Bullet.image_angle = Angle;
-     Bullet.direction = Angle;
-     Bullet.speed = 10;
-     ShootCounter = 0;
+if (gamepad_button_check(Owner.PlayerNum, gp_shoulderr) and ShootCounter == 0){
+    SharpShootingBPS(oBullet, Angle, 10);
+    ShootCounter++;
 }
-if (ShootCounter &gt; BPS){
-ShootCounter = 0;
+if (gamepad_button_check(Owner.PlayerNum, gp_shoulderr) and ShootCounter &gt;= 1){
+    ShootCounter++;
+    if (ShootCounter == BPS){
+         SharpShootingBPS(oBullet, Angle, 10);
+         ShootCounter = 0;
+    }
 }
-m = ShootCounter;
+if (gamepad_button_check_released(Owner.PlayerNum, gp_shoulderr) and ShootCounter &gt; 0){
+    ShootCounter = 0;  
+}
+HP = Life(0, 0, 0);
+m = HP;
 /*
+if (gamepad_button_check_pressed(Owner.PlayerNum, gp_shoulderr)){
+    SharpShootingBPS(oBullet, Angle);
+    ShootCounter++;
+    if (ShootCounter == BPS){
+         SharpShootingBPS(oBullet, Angle);
+         ShootCounter = 0;
+    }
+}
+if (ShootCounter &gt; BPS or gamepad_button_check_released(Owner.PlayerNum, gp_shoulderr)){
+   ShootCounter = 0;
+}
 </string>
           </argument>
         </arguments>

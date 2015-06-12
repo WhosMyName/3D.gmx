@@ -1,3 +1,5 @@
+///Return UID from Collider
+
 var Collider = argument0;
 var x1 = x - (sprite_get_width(sprite_index) / 2) + 1;
 var y1 = y + (sprite_get_height(sprite_index) / 2) + 1;

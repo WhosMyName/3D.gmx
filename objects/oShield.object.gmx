@@ -51,11 +51,7 @@ Shielding = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_exists(Owner) == false){
-instance_destroy();
-}
-
-
+            <string>if (instance_exists(Owner) == true){
 x = Owner.x;
 y = Owner.y;
 
@@ -69,6 +65,12 @@ image_alpha = 1;
 Shielding = 1;
 }
 image_angle = (Owner.image_angle - 90);
+
+}
+else {
+instance_destroy();
+}
+
 
 
 </string>

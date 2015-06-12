@@ -52,6 +52,11 @@
             <string>if (RectangleCollision(oFlameShield) == true){
 instance_destroy();
 }
+
+if (RectangleCollision(oBullet) == true){
+instance_destroy();
+}
+
 if (RectangleCollision(oClasses) == true){
    Collider = RectangleCollisionID(oClasses);
    with(Collider){
