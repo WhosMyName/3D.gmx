@@ -64,6 +64,7 @@
     <object>objects\oEnemy1</object>
     <object>objects\oTarget</object>
     <object>objects\oBullet</object>
+    <object>objects\oLighting</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
