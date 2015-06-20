@@ -42,6 +42,7 @@
     <script>scripts\ArrayIDList.gml</script>
     <script>scripts\KillOnViewExit.gml</script>
     <script>scripts\ClassSelect.gml</script>
+    <script>scripts\HasShadow.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\oGlobalVars</object>
@@ -65,6 +66,7 @@
     <object>objects\oTarget</object>
     <object>objects\oBullet</object>
     <object>objects\oLighting</object>
+    <object>objects\oShadow</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
