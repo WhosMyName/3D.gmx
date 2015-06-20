@@ -74,7 +74,7 @@ draw_set_color(c_white);
  
 // Draw circles in the overlay with your different light sources
 // Note that I add randomization to the position and radius to mimic a flicker effect
-with (oPlayers)
+with (oClasses)
 draw_circle(x + random_range(-1, 1), y + random_range(-1, 1), 75 + random_range(-1, 1), false);
 
 // Reset all of your draw stuff

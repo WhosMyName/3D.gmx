@@ -156,7 +156,6 @@
     <instance objName="oEnemy1" x="656" y="400" name="inst_C726916C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oEnemy1" x="416" y="304" name="inst_C977D221" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oEnemy1" x="320" y="80" name="inst_F0957918" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPlayer1" x="80" y="256" name="inst_C43179AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLighting" x="432" y="208" name="inst_D7A270D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
