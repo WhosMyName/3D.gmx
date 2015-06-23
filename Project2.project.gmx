@@ -9,7 +9,6 @@
     <sprite>sprites\sClass1</sprite>
     <sprite>sprites\sClass2</sprite>
     <sprite>sprites\sBeast</sprite>
-    <sprite>sprites\sShadow</sprite>
     <sprites name="gRain">
       <sprite>sprites\sRainGenerator</sprite>
       <sprite>sprites\sRain</sprite>
@@ -42,7 +41,16 @@
     <script>scripts\ArrayIDList.gml</script>
     <script>scripts\KillOnViewExit.gml</script>
     <script>scripts\ClassSelect.gml</script>
-    <script>scripts\HasShadow.gml</script>
+    <scripts name="Lighting">
+      <script>scripts\lightmap_init.gml</script>
+      <script>scripts\lightmap_update.gml</script>
+      <script>scripts\lightmap_draw.gml</script>
+      <script>scripts\light_init.gml</script>
+      <script>scripts\light_update.gml</script>
+      <script>scripts\light_draw.gml</script>
+      <script>scripts\caster_init.gml</script>
+      <script>scripts\caster_draw.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\oGlobalVars</object>
@@ -65,8 +73,9 @@
     <object>objects\oEnemy1</object>
     <object>objects\oTarget</object>
     <object>objects\oBullet</object>
-    <object>objects\oLighting</object>
-    <object>objects\oShadow</object>
+    <object>objects\oLightMap</object>
+    <object>objects\oLight</object>
+    <object>objects\oShadowCaster</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
