@@ -33,9 +33,6 @@
       <script>scripts\TurnDirection.gml</script>
       <script>scripts\SharpShootingBPS.gml</script>
     </scripts>
-    <script>scripts\RectangleCollisionNoCenter.gml</script>
-    <script>scripts\RectangleCollision.gml</script>
-    <script>scripts\RectangleCollisionID.gml</script>
     <script>scripts\Life.gml</script>
     <script>scripts\LockOn.gml</script>
     <script>scripts\ArrayIDList.gml</script>
@@ -51,6 +48,11 @@
       <script>scripts\caster_init.gml</script>
       <script>scripts\caster_draw.gml</script>
     </scripts>
+    <scripts name="Collisions">
+      <script>scripts\RectangleCollisionNoCenter.gml</script>
+      <script>scripts\RectangleCollision.gml</script>
+      <script>scripts\RectangleCollisionID.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\oGlobalVars</object>
@@ -59,15 +61,17 @@
     <object>objects\oSelectClass</object>
     <object>objects\oClasses</object>
     <object>objects\oClass1</object>
-    <objects name="gGround">
+    <objects name="GroundAndWalls">
       <object>objects\oWallParent</object>
       <object>objects\oWallWood</object>
     </objects>
-    <object>objects\oPlayers</object>
-    <object>objects\oPlayer1</object>
-    <object>objects\oPlayer2</object>
-    <object>objects\oPlayer3</object>
-    <object>objects\oPlayer4</object>
+    <objects name="Players">
+      <object>objects\oPlayers</object>
+      <object>objects\oPlayer1</object>
+      <object>objects\oPlayer2</object>
+      <object>objects\oPlayer3</object>
+      <object>objects\oPlayer4</object>
+    </objects>
     <object>objects\oShield</object>
     <object>objects\oFlameShield</object>
     <object>objects\oEnemy1</object>
