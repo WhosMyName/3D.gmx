@@ -1,3 +1,7 @@
+if (!surface_exists(lightsurface)){
+light_init(256,c_white,1);
+}
+else {
 //draw onto the lightsurface created in light_init()
 surface_set_target(lightsurface);
 
@@ -67,3 +71,5 @@ draw_primitive_end();
 
 //reset the target surface;
 surface_reset_target();
+
+}

@@ -155,10 +155,10 @@
     <instance objName="oEnemy1" x="688" y="448" name="inst_C726916C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oEnemy1" x="336" y="224" name="inst_C977D221" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oEnemy1" x="432" y="160" name="inst_F0957918" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPlayer1" x="176" y="240" name="inst_B0E5EEAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oShadowCaster" x="304" y="528" name="inst_69215ED4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLightMap" x="400" y="272" name="inst_D5C84F32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWallWood" x="400" y="192" name="inst_B708B6C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oPlayer1" x="176" y="224" name="inst_E486AA4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oShadowCaster" x="400" y="176" name="inst_9E1221F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background0" x="32" y="416" w="256" h="256" xo="0" yo="0" id="10000108" name="inst_741C1AE8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

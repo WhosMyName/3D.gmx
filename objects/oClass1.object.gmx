@@ -46,6 +46,7 @@ BPS = Sec1/10;
 ShootCounter = 0;
 
 Light = instance_create(x, y, oLight)
+Light.Owner = self.id;
 </string>
           </argument>
         </arguments>
@@ -71,8 +72,6 @@ Light = instance_create(x, y, oLight)
             <string>PlayerMovement(Owner.PlayerNum);
 Angle = TurnDirection(Owner.PlayerNum);
 
-Light.x = x;
-Light.y = y;
 
 if(gamepad_button_check_pressed(Owner.PlayerNum, gp_shoulderrb) and ShieldExist == 0){
 Shield = instance_create(x+5, y, oShield);

@@ -1,3 +1,4 @@
+
 //total number of points in the casting procces. 4 means we define 4 points.(obviously.)
 cast_points = 4;
 

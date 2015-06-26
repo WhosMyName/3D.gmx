@@ -1,3 +1,7 @@
+if (!surface_exists(lightmap)){
+lightmap_init(room_width,room_height,0);
+}
+else {
 //update all lights
 with(oLight){
 light_update();
@@ -34,3 +38,5 @@ draw_set_blend_mode(bm_normal);
 
 //reset surface
 surface_reset_target();
+
+}
