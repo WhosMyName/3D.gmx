@@ -1,4 +1,4 @@
-
+/*
 //total number of points in the casting procces. 4 means we define 4 points.(obviously.)
 cast_points = 4;
 
@@ -17,9 +17,9 @@ cast_y[2]=32;
 //fourth point, down left corner
 cast_x[3]=0;
 cast_y[3]=32;
-
+*/
 //____________________________________________________________
-/*
+
 //total number of points in the casting procces. 4 means we define 4 points.(obviously.)
 cast_points = 4;
  
@@ -39,4 +39,4 @@ cast_y[2]=-sprite_yoffset+sprite_height;
 cast_x[3]=-sprite_xoffset;
 
 cast_y[3]=-sprite_yoffset+sprite_height;
-*/
+
