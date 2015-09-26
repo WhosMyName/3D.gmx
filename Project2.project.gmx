@@ -38,16 +38,6 @@
     <script>scripts\ArrayIDList.gml</script>
     <script>scripts\KillOnViewExit.gml</script>
     <script>scripts\ClassSelect.gml</script>
-    <scripts name="Lighting">
-      <script>scripts\lightmap_init.gml</script>
-      <script>scripts\lightmap_update.gml</script>
-      <script>scripts\lightmap_draw.gml</script>
-      <script>scripts\light_init.gml</script>
-      <script>scripts\light_update.gml</script>
-      <script>scripts\light_draw.gml</script>
-      <script>scripts\caster_init.gml</script>
-      <script>scripts\caster_draw.gml</script>
-    </scripts>
     <scripts name="Collisions">
       <script>scripts\RectangleCollisionNoCenter.gml</script>
       <script>scripts\RectangleCollision.gml</script>
@@ -77,9 +67,6 @@
     <object>objects\oEnemy1</object>
     <object>objects\oTarget</object>
     <object>objects\oBullet</object>
-    <object>objects\oLightMap</object>
-    <object>objects\oLight</object>
-    <object>objects\oShadowCaster</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

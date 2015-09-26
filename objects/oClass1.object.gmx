@@ -50,9 +50,6 @@ MaxTargets = ArrayIDList(oEnemy1);
 BPS = Sec1/10;
 ShootCounter = 0;
 
-//----------Lighting-------------
-Light = instance_create(x, y, oLight)
-Light.Owner = self.id;
 </string>
           </argument>
         </arguments>
